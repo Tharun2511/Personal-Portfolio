@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a765eabaa7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="contents">
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="main-body">
+                <p>Student of SNIST</p>
+                <h1>Hi, I'm <span>Tharun</span><br>from Hyderabad</h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------about me-------------------->
+    <div id="aboutme">
+        <div class="container">
+            <div class="row">
+            <div class="col1">
+                <img src="manwithaplan.jpg">
+            </div>
+            <div class="col2">
+                <h1 class="title">About Me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas corporis possimus harum distinctio repudiandae, dolor ex mollitia porro voluptate suscipit deserunt libero minus accusamus pariatur molestias, rerum corrupti quaerat suscipit deserunt libero minus accusamus pariatur molestias, rerum corrupti quaerat.</p>
+                <div class="Education">Education</div>
+                <div id="aboutme-title">
+                    <p class="aboutme-subtitle active-subtitle" onclick="clicktab('schooling')">Schooling</p>
+                    <p class="aboutme-subtitle" onclick="clicktab('jrcollege')">Junior College</p>
+                    <p class="aboutme-subtitle" onclick="clicktab('graduation')">Graduation</p>
+                </div>
+                <div class="aboutme-content active-content" id="schooling">
+                    <ul>
+                        <li><span>School Name:</span><br>Satya Sai Techno School</li>
+                        <li><span>Passed Out:</span><br>2018</li>
+                        <li><span>Address:</span><br>Ramathapur, Hyderabad</li>
+                    </ul>
+                </div>
+                <div class="aboutme-content" id="jrcollege">
+                    <ul>
+                        <li><span>College Name:</span><br>Sri Chaitanya Junior College</li>
+                        <li><span>Passed Out:</span><br>2020</li>
+                        <li><span>Address:</span><br>Ramathapur, Hyderabad</li>
+                    </ul>
+                </div>
+                <div class="aboutme-content" id="graduation">
+                    <ul>
+                        <li><span>Institute Name:</span><br>Sreenidhi Institutes of Science and Technology</li>
+                        <li><span>Passed Out by:</span><br>2024</li>
+                        <li><span>Address:</span><br>Yamnampet, Ghatkesar</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- --------------------skills---------------------- -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="title">Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Development</h2>
+                    <p><span>If you are new to programming, you might have heard of the term Front End Development. But what does that mean?
+
+                    In this article, I will explain what Front End Development is, what skills you need to become a Front End Developer, and tips for landing a job.</span></p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java</h2>
+                    <p>Lorem ipsum dolor sit,sit amet consectetur adipisicing elit. amet consectetur adipisicing elit. Perferendis doloribus vero quia.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>DSA</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita voluptas obcaecat sit amet consectetur adipisicing elit.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+            <a href="#" class="button">See more</a>
+        </div>
+    </div>
+    <!-- --------------------Projects-------------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="title">Projects</h1>
+            <div class="Projects-List">
+                <div class="project">
+                    <img src="work-1.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iusto nulla.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="work-2.png">
+                    <div class="layer">
+                        <h3>Digital Clock</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iusto nulla.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="work-3.png">
+                    <div class="layer">
+                        <h3>Virtual Calculator</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum iusto nulla.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="button">See more</a>
+        </div>
+    </div>
+    <!-- ----------------------Contact Details-------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-col1">
+                    <h1 class="title">Contact</h1>
+                    <p><i class="fa-solid fa-envelope-open"></i> gtharun2511@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 76010 60044</p>
+                    <div class="socialmedia">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="" class="button button2">Download CV</a>
+                </div>
+                <div class="contact-col2">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="button button2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var subtitles=document.getElementsByClassName("aboutme-subtitle");
+        var contents=document.getElementsByClassName("aboutme-content");
+
+        function clicktab(subtitlename){
+            for(subtitle of subtitles){
+                subtitle.classList.remove("active-subtitle");
+            }
+            for(content of contents){
+                content.classList.remove("active-content");
+            }
+            event.currentTarget.classList.add("active-subtitle");
+            document.getElementById(subtitlename).classList.add("active-content");
+        }
+        
+        var sidmen=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidmen.style.right=0;
+        }
+
+        function closemenu(){
+            sidmen.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>
